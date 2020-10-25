@@ -1,9 +1,10 @@
 FROM debian
+#hadolint ignore=DL3006
 
-RUN export node_version="0.10" \
-&& apt-get update && apt-get -y install nodejs="$node_verion"
+#RUN export node_version="0.10" \
+#&& apt-get update && apt-get -y install nodejs="$node_verion"
 
-COPY package.json usr/src/app
+#COPY package.json usr/src/app
 
-RUN cd /usr/src/app \
-&& npm install node-static
+#RUN cd /usr/src/app \
+#&& npm install node-static
