@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:8
 #hadolint ignore=DL3006
 
 #RUN export node_version="0.10" \
